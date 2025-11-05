@@ -1,49 +1,53 @@
-# History files
+# R specific
+.Rproj.user
 .Rhistory
-.Rapp.history
-
-# Session Data files
 .RData
-.RDataTmp
-
-# User-specific files
 .Ruserdata
+*.Rproj
 
-# Example code in package build process
-*-Ex.R
+# Data files (we'll add data separately)
+*.csv
+data/*.csv
+!data/README.md
 
-# Output files from R CMD build
-/*.tar.gz
+# Large output files
+*.rds
+output/*.rds
 
-# Output files from R CMD check
-/*.Rcheck/
+# System files
+.DS_Store
+Thumbs.db
+*~
 
-# RStudio files
-.Rproj.user/
+# Temporary files
+*.tmp
+*.log
+```
 
-# produced vignettes
-vignettes/*.html
-vignettes/*.pdf
+**Save the file** (Ctrl+S / Cmd+S)
 
-# OAuth2 token, see https://github.com/hadley/httr/releases/tag/v0.3
-.httr-oauth
+---
 
-# knitr and R markdown default cache directories
-*_cache/
-/cache/
+### **4.4: Commit and Push Your Changes**
 
-# Temporary files created by R markdown
-*.utf8.md
-*.knit.md
+**Now the magic happens!**
 
-# R Environment Variables
-.Renviron
+**Look at the Git tab** (top-right pane in RStudio):
 
-# pkgdown site
-docs/
+You should see files listed with **yellow "?"** icons (untracked files).
 
-# translation temp files
-po/*~
+**Step-by-step:**
 
-# RStudio Connect folder
-rsconnect/
+1. **Check the boxes** next to:
+   - `.gitignore`
+   - `code/` folder (all files in it)
+   - `data/README.md`
+   - `output/README.md`
+   - `figures/README.md`
+   - `reports/README.md`
+
+2. **Click "Commit"** button
+
+3. **A new window opens.** In the "Commit message" box (top-right), type:
+```
+   Initial project setup with folder structure
