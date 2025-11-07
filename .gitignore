@@ -13,6 +13,7 @@ data/*.csv
 # Large output files
 *.rds
 output/*.rds
+output/*.txt
 
 # System files
 .DS_Store
@@ -23,31 +24,3 @@ Thumbs.db
 *.tmp
 *.log
 ```
-
-**Save the file** (Ctrl+S / Cmd+S)
-
----
-
-### **4.4: Commit and Push Your Changes**
-
-**Now the magic happens!**
-
-**Look at the Git tab** (top-right pane in RStudio):
-
-You should see files listed with **yellow "?"** icons (untracked files).
-
-**Step-by-step:**
-
-1. **Check the boxes** next to:
-   - `.gitignore`
-   - `code/` folder (all files in it)
-   - `data/README.md`
-   - `output/README.md`
-   - `figures/README.md`
-   - `reports/README.md`
-
-2. **Click "Commit"** button
-
-3. **A new window opens.** In the "Commit message" box (top-right), type:
-```
-   Initial project setup with folder structure
